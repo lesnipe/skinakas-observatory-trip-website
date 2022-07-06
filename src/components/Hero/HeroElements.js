@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { VscDebugStart } from "react-icons/vsc";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background: #000;
@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1080px;
+  height: 1000px;
   position: relative;
   z-index: 1;
 
@@ -58,18 +58,13 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 128px;
+  font-size: 68px;
   font-weight: 800;
   text-align: center;
   white-space: nowrap;
-  @media screen and (max-width: 1500px) {
-    font-size: 90px;
-  }
-  @media screen and (max-width: 1080px) {
-    font-size: 68px;
-  }
+ 
   @media screen and (max-width: 768px) {
-    font-size: 46px;
+    font-size: 40px;
   }
   @media screen and (max-width: 480px) {
     font-size: 34px;
@@ -77,21 +72,15 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 20px;
   color: #fff;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 700;
   text-align: start;
-  width: 1250px;
+  max-width: 680px;
   
-  @media screen and (max-width: 1500px) {
-    font-size: 24px;
-  }
-  @media screen and (max-width: 1080px) {
-    font-size: 22px;
-  }
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
   @media screen and (max-width: 480px) {
     font-size: 16px;
@@ -103,9 +92,13 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    transform: scale(0.8);
+  }
 `;
 
-export const ArrowStart = styled(VscDebugStart)`
+export const ArrowStart = styled(MdArrowForwardIos)`
   margin-left: 8px;
   font-size: 20px;
+  font-weight: 1000;
 `;

@@ -1,6 +1,7 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from './pages'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/HomePage";
+import Book from "./pages/BookPage";
 
 function App() {
   const redirectTo = (url) => {

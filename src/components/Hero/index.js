@@ -9,7 +9,7 @@ import {
   HeroBtnWrapper,
   ArrowStart,
 } from "./HeroElements";
-import { Button } from "../ButtonElement";
+import { Button } from "../ButtonElements";
 import Video from "../../videos/video.mp4";
 
 const HeroSection = () => {
