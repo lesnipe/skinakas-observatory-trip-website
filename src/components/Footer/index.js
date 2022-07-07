@@ -28,8 +28,16 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <BackToTopContainer>
-                <BackToTopArrow>
+                <BackToTopArrow
+                  to="about-us"
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
+                  exact={"true"}
+                  offset={-80}
+                >
                   <MdOutlineKeyboardArrowUp />
+                  <p>(back to top ↑)</p>
                 </BackToTopArrow>
               </BackToTopContainer>
               <FooterLinkItems>

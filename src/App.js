@@ -1,7 +1,7 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/HomePage";
-import Book from "./pages/BookPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import BookPage from "./pages/BookPage";
 
 function App() {
   const redirectTo = (url) => {
@@ -9,9 +9,16 @@ function App() {
   };
 
   return (
-    <Router>
-      <Home redirectTo={redirectTo} />
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage redirectTo={redirectTo} />} exact />
+        <Route path="/about-us" element={<h1>About us page</h1>} exact />
+        <Route path="/experiences" element={<BookPage />} exact />
+        <Route path="/gallery" element={<h1>Gallery page</h1>} exact />
+        <Route path="/talk-to-us" element={<h1>Talk to us page</h1>} exact />
+        <Route path="/attributors" element={<h1>Attributors page</h1>} exact />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -87,14 +87,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 30px;
-
-  /* 
-  THA XREIASTEIIIIII
-  &:hover{
-    height: 80px;
-    border-bottom: 4px solid #ff7700;
-  } */
 `;
+
 export const NavLinks = styled(LinkScroll)`
   color: #fff;
   display: flex;
@@ -103,9 +97,16 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: 0.1s ease-in;
 
   &.active {
-    border-bottom: 3px solid #ff7700;
+    padding-top: 0.9rem;
+    transform: scale(1.05);
+    color: #ff7700;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 2.2rem;
+    border-bottom: 4px solid #ff7700;
   }
 
   &:hover {
@@ -147,6 +148,7 @@ export const SocialLinks = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none !important;
+  font-size: 24px;
   padding: 0 0.3rem;
   height: 100%;
   cursor: pointer;

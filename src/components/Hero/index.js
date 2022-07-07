@@ -29,12 +29,19 @@ const HeroSection = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </HeroP>
         <HeroBtnWrapper>
-        <Button to="/" primary={0} big={1} dark={0} fontbig={1} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-          Get started {hover && <ArrowStart />}
-        </Button>
-      </HeroBtnWrapper>
+          <Button
+            to="/about-us"
+            primary={0}
+            big={1}
+            dark={0}
+            fontbig={1}
+            onMouseEnter={toggleHover}
+            onMouseLeave={toggleHover}
+          >
+            Get started {hover && <ArrowStart />}
+          </Button>
+        </HeroBtnWrapper>
       </HeroContent>
-      
     </HeroContainer>
   );
 };

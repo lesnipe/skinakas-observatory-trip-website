@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 export const FooterContainer = styled.footer`
   background-color: #000;
@@ -27,7 +28,6 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
-
 
   @media screen and (max-width: 1100px) {
     flex-direction: column;
@@ -110,22 +110,22 @@ export const CreditsItemWrapper = styled.div`
 
 export const CreditsSkinakas = styled.p`
   color: #ff7700;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
 
   @media screen and (max-width: 568px) {
-   font-size: 14px;
+    font-size: 12px;
   }
 `;
 
 export const CreditsDeveloper = styled.p`
   color: #ff7700;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
 
   @media screen and (max-width: 568px) {
-   font-size: 14px;
+    font-size: 12px;
   }
 `;
 
@@ -134,18 +134,43 @@ export const BackToTopContainer = styled.div`
   margin-right: 5rem;
   justify-content: center;
   align-items: center;
-  
+  transition: 0.3s ease-in-out;
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -30px;
+    text-align: center;
+    white-space: nowrap;
+    color: #000;
+  }
+
+  &:hover {
+    p {
+      color: #fff;
+    }
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
   @media screen and (max-width: 768px) {
     margin: 0;
     margin-top: -3rem;
     margin-left: 8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
   }
-
-  
 `;
 
-export const BackToTopArrow = styled.div`
+export const BackToTopArrow = styled(LinkScroll)`
   color: #ff7700;
   font-size: 84px;
+
   cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
 `;

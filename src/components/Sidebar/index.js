@@ -18,19 +18,59 @@ const Sidebar = ({ redirectTo, isOpen, toggleIsOpen }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about-us" onClick={toggleIsOpen}>
+          <SidebarLink
+            to="about-us"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={"true"}
+            offset={-80}
+            onClick={toggleIsOpen}
+          >
             About us
           </SidebarLink>
-          <SidebarLink to="experiences" onClick={toggleIsOpen}>
+          <SidebarLink
+            to="experiences"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={"true"}
+            offset={-80}
+            onClick={toggleIsOpen}
+          >
             Experiences
           </SidebarLink>
-          <SidebarLink to="gallery" onClick={toggleIsOpen}>
+          <SidebarLink
+            to="gallery"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={"true"}
+            offset={-80}
+            onClick={toggleIsOpen}
+          >
             Gallery
           </SidebarLink>
-          <SidebarLink to="talk-to-us" onClick={toggleIsOpen}>
+          <SidebarLink
+            to="talk-to-us"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={"true"}
+            offset={-80}
+            onClick={toggleIsOpen}
+          >
             Talk to us
           </SidebarLink>
-          <SidebarLink to="attributors" onClick={toggleIsOpen}>
+          <SidebarLink
+            to="attributors"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={"true"}
+            offset={-80}
+            onClick={toggleIsOpen}
+          >
             Attributors
           </SidebarLink>
           <SocialMenu isOpen={isOpen}>

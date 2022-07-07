@@ -33,19 +33,64 @@ const Navbar = ({ redirectTo, isOpen, toggleIsOpen }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about-us">About us</NavLinks>
+              <NavLinks
+                to="about-us"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={1}
+                offset={-80}
+              >
+                About us
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="experiences">Experiences</NavLinks>
+              <NavLinks
+                to="experiences"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={1}
+                offset={-80}
+              >
+                Experiences
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="gallery">Gallery</NavLinks>
+              <NavLinks
+                to="gallery"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={1}
+                offset={-80}
+              >
+                Gallery
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="talk-to-us">Talk to us</NavLinks>
+              <NavLinks
+                to="talk-to-us"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={1}
+                offset={-80}
+              >
+                Talk to us
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="attributors">Attributors</NavLinks>
+              <NavLinks
+                to="attributors"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={1}
+                offset={-80}
+              >
+                Attributors
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <SocialMenu>
@@ -67,7 +112,7 @@ const Navbar = ({ redirectTo, isOpen, toggleIsOpen }) => {
               <SocialLinks
                 onClick={() => redirectTo("https://www.youtube.com")}
               >
-                <FaYoutube size={20} />
+                <FaYoutube size={28} />
               </SocialLinks>
             </SocialItem>
           </SocialMenu>
